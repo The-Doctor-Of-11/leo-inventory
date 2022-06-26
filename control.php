@@ -52,7 +52,291 @@ else if ($_SESSION['id'] != 0) {
             ?>
         </div>
 
-        <!-- Add Output for All Locations Current Inventory Levels HERE! -->
+        <div class="vertSpace"></div>
+
+        <!-- Storage Inventory -->
+        <div class='outline'>
+            <h2 style="text-decoration: underline;">Current Inventory: Storage</h2>
+            <div class='opwrapper'>
+                <h3>Ice Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(1);
+
+                echo "<h3> {$data['Ice']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/iceCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="1" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Lemon Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Lemons']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/lemCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="1" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Pink Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Pink']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/pinkCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="1" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>White Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(1);
+
+                echo "<h3> {$data['White']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/whiteCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="1" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Cups Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(1);
+
+                echo "<h3> {$data['Cups']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/cupCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="1" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="vertSpace"></div>
+
+        <!-- White House Inventory -->
+        <div class='outline'>
+            <h2 style="text-decoration: underline;">Current Inventory: White House</h2>
+            <div class='opwrapper'>
+                <h3>Ice Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(2);
+
+                echo "<h3> {$data['Ice']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/iceCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="2" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Lemon Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Lemons']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/lemCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="2" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Pink Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Pink']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/pinkCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="2" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>White Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(2);
+
+                echo "<h3> {$data['White']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/whiteCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="2" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Cups Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(2);
+
+                echo "<h3> {$data['Cups']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/cupCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="2" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="vertSpace"></div>
+
+        <!-- Lemonade Big Inventory -->
+        <div class='outline'>
+            <h2 style="text-decoration: underline;">Current Inventory: Lemonade Big</h2>
+            <div class='opwrapper'>
+                <h3>Ice Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(3);
+
+                echo "<h3> {$data['Ice']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/iceCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="3" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Lemon Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Lemons']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/lemCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="3" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Pink Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Pink']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/pinkCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="3" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>White Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(3);
+
+                echo "<h3> {$data['White']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/whiteCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="3" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Cups Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(3);
+
+                echo "<h3> {$data['Cups']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/cupCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="3" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="vertSpace"></div>
+
+        <!-- Lemonade Little Inventory -->
+        <div class='outline'>
+            <h2 style="text-decoration: underline;">Current Inventory: Lemonade Little</h2>
+            <div class='opwrapper'>
+                <h3>Ice Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(4);
+
+                echo "<h3> {$data['Ice']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/iceCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="4" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Lemon Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Lemons']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/lemCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="4" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Pink Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                echo "<h3> {$data['Pink']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/pinkCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="4" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>White Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(4);
+
+                echo "<h3> {$data['White']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/whiteCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="4" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+            <hr>
+            <div class='opwrapper'>
+                <h3>Cups Remaining: </h3>
+                <div class="horizSpace"></div>
+                <?php
+                $data = $db->getData(4);
+
+                echo "<h3> {$data['Cups']} Bag(s) </h3>";
+                ?>
+                <form action='./assets/scripts/ctrl/cupCtrl.php' class="formLine">
+                    <input type="text" name="quan" class="inVal" />
+                    <button name="id" value="4" type="submit" class="plsBtn">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="vertSpace"></div>   
 
     </div>
 </body>

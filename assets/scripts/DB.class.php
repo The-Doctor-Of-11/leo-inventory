@@ -86,6 +86,56 @@ class DB
         } //end if
     }
 
+    function updIce($id, $quan) {
+        $sql = "UPDATE Inventory SET Ice = $quan WHERE LocID = $id;";
+        if (mysqli_query($this->dbh, $sql)) {
+            return true;
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($this->dbh);
+            return false;
+        }
+    }
+
+    function updLem($id, $quan) {
+        $sql = "UPDATE Inventory SET Lemons = $quan WHERE LocID = $id;";
+        if (mysqli_query($this->dbh, $sql)) {
+            return true;
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($this->dbh);
+            return false;
+        }
+    }
+
+    function updPink($id, $quan) {
+        $sql = "UPDATE Inventory SET Pink = $quan WHERE LocID = $id;";
+        if (mysqli_query($this->dbh, $sql)) {
+            return true;
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($this->dbh);
+            return false;
+        }
+    }
+
+    function updWhite($id, $quan) {
+        $sql = "UPDATE Inventory SET White = $quan WHERE LocID = $id;";
+        if (mysqli_query($this->dbh, $sql)) {
+            return true;
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($this->dbh);
+            return false;
+        }
+    }
+
+    function updCups($id, $quan) {
+        $sql = "UPDATE Inventory SET Cups = $quan WHERE LocID = $id;";
+        if (mysqli_query($this->dbh, $sql)) {
+            return true;
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($this->dbh);
+            return false;
+        }
+    }
+
     function remIce($id) {
         if ($stmt = mysqli_query($this->dbh, "SELECT Ice FROM Inventory WHERE LocID = $id;")) {
             $val = mysqli_fetch_assoc($stmt)['Ice'] - 1;

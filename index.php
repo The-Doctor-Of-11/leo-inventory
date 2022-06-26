@@ -59,8 +59,9 @@ if (!isset($_SESSION['help'])) {
 
         <div class='wrapper'>
             <h3>Ice Remaining: </h3>
-            <form action='./assets/scripts/iceAdd.php'>
-                <input type="submit" name="button1" class="plsbtn" value="+" />
+
+            <form action='./assets/scripts/iceRem.php'>
+                <input type="submit" name="button1" class="minbtn" value="-" />
             </form>
 
             <?php
@@ -69,15 +70,15 @@ if (!isset($_SESSION['help'])) {
             echo "<h3> {$data['Ice']} Bag(s) </h3>";
             ?>
 
-            <form action='./assets/scripts/iceRem.php'>
-                <input type="submit" name="button1" class="minbtn" value="-" />
+            <form action='./assets/scripts/iceAdd.php'>
+                <input type="submit" name="button1" class="plsbtn" value="+" />
             </form>
         </div>
 
         <div class='wrapper'>
             <h3>Lemon Bags Remaining: </h3>
-            <form action='./assets/scripts/lemAdd.php'>
-                <input type="submit" name="button1" class="plsbtn" value="+" />
+            <form action='./assets/scripts/lemRem.php'>
+                <input type="submit" name="button1" class="minbtn" value="-" />
             </form>
 
             <?php
@@ -86,15 +87,15 @@ if (!isset($_SESSION['help'])) {
             echo "<h3> {$data['Lemons']} Bag(s) </h3>";
             ?>
 
-            <form action='./assets/scripts/lemRem.php'>
-                <input type="submit" name="button1" class="minbtn" value="-" />
+            <form action='./assets/scripts/lemAdd.php'>
+                <input type="submit" name="button1" class="plsbtn" value="+" />
             </form>
         </div>
 
         <div class='wrapper'>
             <h3>Pink Bags Remaining: </h3>
-            <form action='./assets/scripts/pinkAdd.php'>
-                <input type="submit" name="button1" class="plsbtn" value="+" />
+            <form action='./assets/scripts/pinkRem.php'>
+                <input type="submit" name="button1" class="minbtn" value="-" />
             </form>
 
             <?php
@@ -103,15 +104,15 @@ if (!isset($_SESSION['help'])) {
             echo "<h3> {$data['Pink']} Bag(s) </h3>";
             ?>
 
-            <form action='./assets/scripts/pinkRem.php'>
-                <input type="submit" name="button1" class="minbtn" value="-" />
+            <form action='./assets/scripts/pinkAdd.php'>
+                <input type="submit" name="button1" class="plsbtn" value="+" />
             </form>
         </div>
 
         <div class='wrapper'>
             <h3>White Bags Remaining: </h3>
-            <form action='./assets/scripts/whiteAdd.php'>
-                <input type="submit" name="button1" class="plsbtn" value="+" />
+            <form action='./assets/scripts/whiteRem.php'>
+                <input type="submit" name="button1" class="minbtn" value="-" />
             </form>
 
             <?php
@@ -120,15 +121,15 @@ if (!isset($_SESSION['help'])) {
             echo "<h3> {$data['White']} Bag(s) </h3>";
             ?>
 
-            <form action='./assets/scripts/whiteRem.php'>
-                <input type="submit" name="button1" class="minbtn" value="-" />
+            <form action='./assets/scripts/whiteAdd.php'>
+                <input type="submit" name="button1" class="plsbtn" value="+" />
             </form>
         </div>
 
         <div class='wrapper'>
             <h3>Cup Bags Remaining: </h3>
-            <form action='./assets/scripts/cupAdd.php'>
-                <input type="submit" name="button1" class="plsbtn" value="+" />
+            <form action='./assets/scripts/cupRem.php'>
+                <input type="submit" name="button1" class="minbtn" value="-" />
             </form>
 
             <?php
@@ -137,8 +138,8 @@ if (!isset($_SESSION['help'])) {
             echo "<h3> {$data['Cups']} Bag(s) </h3>";
             ?>
 
-            <form action='./assets/scripts/cupRem.php'>
-                <input type="submit" name="button1" class="minbtn" value="-" />
+            <form action='./assets/scripts/cupAdd.php'>
+                <input type="submit" name="button1" class="plsbtn" value="+" />
             </form>
         </div>
 
